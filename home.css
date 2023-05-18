@@ -1,0 +1,30 @@
+h1 {
+    font-family: PP NeueBit;
+    font-size: 100px;
+    color: white;
+}
+
+h2 {
+    font-family: PP NeueBit;
+    font-size: 50px;
+    color: white
+}
+
+body{
+    background-color: #B1C3E5;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.btn-primary {
+    font-family: PP NeueBit;
+    font-size: 25px;
+    background-color: #1E55BE;
+    color: white;
+}
+
+#iconsocial {
+    margin-left: 26cm;
+    
+}
+
