@@ -1,6 +1,5 @@
 .container-fluid{
     background-color: #B1C3E5;
-    overflow: hidden;
   }
   
 .row{
@@ -34,3 +33,7 @@ h2 {
     height: 20px;
 }
 
+.nav{
+    font-family: PP NeueBit;
+    font-size: 30px;
+}

@@ -1,6 +1,5 @@
 .container-fluid{
   background-color: #B1C3E5;
-  overflow: hidden;
 }
 
 .row{
@@ -36,4 +35,9 @@ p {
 .botao{
   width: 20px;
   height: 20px;
+}
+
+.nav{
+  font-family: PP NeueBit;
+  font-size: 30px;
 }
