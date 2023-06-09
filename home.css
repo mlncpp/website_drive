@@ -1,10 +1,7 @@
 .container-fluid{
     background-color: #B1C3E5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
     overflow: hidden;
   }
   
@@ -43,3 +40,13 @@ h2 {
     font-family: PP NeueBit;
     font-size: 30px;
 }
+
+header {
+    background-image: url(file:///C:/Users/mario/Downloads/Bot%C3%B5es%20Menu.svg);
+    background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100vw;
+  height: 180px;
+  }
+  
