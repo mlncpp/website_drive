@@ -1,8 +1,9 @@
 .container-fluid{
     background-color: #B1C3E5;
-    position: relative;
+  }
+
+  .min-height-100 {
     min-height: 100vh;
-    overflow: hidden;
   }
   
 .row{
