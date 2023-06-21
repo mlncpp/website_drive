@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programa</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/programa.css">
+    </head>
+    <body>
+    <div class="header sticky-top">
+        <header class="navbar navbar-expand-md">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <h1 class="display-1 text-light">DRIVE</h1>
+                    </a>
+                    <div class="ml-3">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-secondary dropdown-toggle"
+                                type="button"
+                                id="languageDropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <span id="selectedLanguage">POR</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <a class="dropdown-item" href="#">ENG</a>
+                                <a class="dropdown-item" href="#">POR</a>
+                                <a class="dropdown-item" href="#">ESP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="navbar-toggler navbar-toggler-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-light normal-link" href="sobre.html" data-lang="about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-light normal-link"
+                                href="programa.html"
+                                data-lang="program">Programa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-light normal-link"
+                                href="inscricao.html"
+                                data-lang="registration">Inscrição</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-light normal-link"
+                                href="contactos.html"
+                                data-lang="contacts">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link text-light normal-link"
+                                href="arquivos.html"
+                                data-lang="files">Arquivos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="menu-fullscreen" style="display: none;">
+        <div class="close-menu">&times;</div>
+        <ul>
+            <li>
+                <a href="sobre.html" data-lang="about">Sobre<span class="menu-bar"></span></a>
+            </li>
+            <li>
+                <a href="programa.html" data-lang="program">Programa<span class="menu-bar"></span></a>
+            </li>
+            <li>
+                <a href="inscricao.html" data-lang="registration">Inscrição<span class="menu-bar"></span></a>
+            </li>
+            <li>
+                <a href="contactos.html" data-lang="contacts">Contactos<span class="menu-bar"></span></a>
+            </li>
+            <li>
+                <a href="arquivos.html" data-lang="files">Arquivos<span class="menu-bar"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="container-fluid">
+            <div class="container">
+                <h1 class="display-1" data-lang="program">Programa</h1>
+                <div class="timeline-container">
+                    <div class="timeline-bar"></div>
+                    <div class="dates-container">
+                        <a
+                            href=""
+                            class="custom-btn btn-8 start"
+                            data-date="15"
+                            style="text-decoration: none;">
+                            <span class="text d-flex align-items-center justify-content-center">15 de Março de 2024</span>
+                        </a>
+                        <div class="timeline"></div>
+                        <a
+                            href="#"
+                            class="custom-btn btn-8 end"
+                            data-date="16"
+                            style="text-decoration: none;">
+                            <span class="text d-flex align-items-center justify-content-center">16 de Março de 2024</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="keynote-speakers show mb-5" id="keynote-speakers-15">
+                    <h2 class="display-5">15 de Março de 2024</h2>
+                    <h3 class="display-6">Keynote Speakers</h3>
+                </div>
+                <div class="keynote-speakers mb-5" id="keynote-speakers-16">
+                    <h2 class="display-5">16 de Março de 2024</h2>
+                    <h3 class="display-6">Keynote Speakers</h3>
+                    <div
+                        class="row align-items-center justify-content-center border-top border-bottom border-white">
+                        <div>
+                            <div class="speaker-card" id="keynoteSpeaker1">
+                                <div class="row align-items-center">
+                                    <div class="col-4 col-md-2 text-center">
+                                        <img
+                                            src="../images/frederico-duarte.png"
+                                            class="img-fluid custom-img"
+                                            alt="Speaker 1">
+                                    </div>
+                                    <div class="col-6 col-md-8 mt-1">
+                                        <h1 class="fw-normal">Frederico Duartess - 10H</h1>
+                                    </div>
+                                    <div class="col-2 col-md-2 mb-3 d-flex justify-content-end">
+                                        <span class="text-primary">+</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="speaker-details text-justify">
+                                            <p class="texto">O desafio contemporâneo do design brasileiro Entre 2004 e 2014
+                                                o Brasil alcançou um crescimento económico, uma mobilidade social e uma
+                                                conquista de direitos sem precedentes. Através de políticas de apoio social e
+                                                estímulo ao consumo, os governos progressistas do Partido dos Trabalhadores
+                                                ambicionaram projectar um futuro melhor para todos os cidadãos da mais desigual
+                                                e violenta democracia do mundo. Ao abordar importantes contribuições de
+                                                designers para a cultura material, visual e de consumo do povo, e não apenas da
+                                                elite brasileira nesta década excepcional, esta apresentação revela tanto o
+                                                impacto local como o apelo universal do design contemporâneo praticado no e para
+                                                o Brasil. Discute ainda os desafios actuais associados à exposição e colecção de
+                                                artefactos resultantes da prática do design num museu dedicado a esta
+                                                actividade. E questiona a importância destes artefactos enquanto testemunhos
+                                                históricos de um período cujos progressos e políticas estão a ser radicalmente
+                                                postos em causa, sobretudo após a eleição de Jair Bolsonaro. Frederico Duarte
+                                                (1979) estudou design de comunicação em Lisboa e crítica de design em Nova
+                                                Iorque. Enquanto crítico e curador de design tem desde 2006 escrito artigos e
+                                                ensaios, contribuído para livros e catálogos, dado palestras e workshops,
+                                                comissariado exposições e organizado eventos sobre design, arquitectura e
+                                                criatividade. Está quase a concluir um doutoramento em curadoria centrado no
+                                                design brasileiro contemporâneo na Birkbeck College e no Museu Victoria &
+                                                Albert, em Londres.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="row align-items-center justify-content-center border-bottom border-white">
+                        <div>
+                            <div class="speaker-card" id="keynoteSpeaker1">
+                                <div class="row align-items-center">
+                                    <div class="col-4 col-md-2 text-center">
+                                        <img
+                                            src="../images/frederico-duarte.png"
+                                            class="img-fluid custom-img"
+                                            alt="Speaker 1">
+                                    </div>
+                                    <div class="col-6 col-md-8 mt-1">
+                                        <h1 class="fw-normal">Frederico Duartes - 10H</h1>
+                                    </div>
+                                    <div class="col-2 col-md-2 mb-3 d-flex justify-content-end">
+                                        <span class="text-primary">+</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="speaker-details text-justify">
+                                            <p class="texto">O desafio contemporâneo do design brasileiro Entre 2004 e 2014
+                                                o Brasil alcançou um crescimento económico, uma mobilidade social e uma
+                                                conquista de direitos sem precedentes. Através de políticas de apoio social e
+                                                estímulo ao consumo, os governos progressistas do Partido dos Trabalhadores
+                                                ambicionaram projectar um futuro melhor para todos os cidadãos da mais desigual
+                                                e violenta democracia do mundo. Ao abordar importantes contribuições de
+                                                designers para a cultura material, visual e de consumo do povo, e não apenas da
+                                                elite brasileira nesta década excepcional, esta apresentação revela tanto o
+                                                impacto local como o apelo universal do design contemporâneo praticado no e para
+                                                o Brasil. Discute ainda os desafios actuais associados à exposição e colecção de
+                                                artefactos resultantes da prática do design num museu dedicado a esta
+                                                actividade. E questiona a importância destes artefactos enquanto testemunhos
+                                                históricos de um período cujos progressos e políticas estão a ser radicalmente
+                                                postos em causa, sobretudo após a eleição de Jair Bolsonaro. Frederico Duarte
+                                                (1979) estudou design de comunicação em Lisboa e crítica de design em Nova
+                                                Iorque. Enquanto crítico e curador de design tem desde 2006 escrito artigos e
+                                                ensaios, contribuído para livros e catálogos, dado palestras e workshops,
+                                                comissariado exposições e organizado eventos sobre design, arquitectura e
+                                                criatividade. Está quase a concluir um doutoramento em curadoria centrado no
+                                                design brasileiro contemporâneo na Birkbeck College e no Museu Victoria &
+                                                Albert, em Londres.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="row align-items-center justify-content-center border-bottom border-white">
+                        <div>
+                            <div class="speaker-card" id="keynoteSpeaker1">
+                                <div class="row align-items-center">
+                                    <div class="col-4 col-md-2 text-center">
+                                        <img
+                                            src="../images/frederico-duarte.png"
+                                            class="img-fluid custom-img"
+                                            alt="Speaker 1">
+                                    </div>
+                                    <div class="col-6 col-md-8 mt-1">
+                                        <h1 class="fw-normal">Frederico Duartes - 10H</h1>
+                                    </div>
+                                    <div class="col-2 col-md-2 mb-3 d-flex justify-content-end">
+                                        <span class="text-primary">+</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="speaker-details text-justify">
+                                            <p class="texto">O desafio contemporâneo do design brasileiro Entre 2004 e 2014
+                                                o Brasil alcançou um crescimento económico, uma mobilidade social e uma
+                                                conquista de direitos sem precedentes. Através de políticas de apoio social e
+                                                estímulo ao consumo, os governos progressistas do Partido dos Trabalhadores
+                                                ambicionaram projectar um futuro melhor para todos os cidadãos da mais desigual
+                                                e violenta democracia do mundo. Ao abordar importantes contribuições de
+                                                designers para a cultura material, visual e de consumo do povo, e não apenas da
+                                                elite brasileira nesta década excepcional, esta apresentação revela tanto o
+                                                impacto local como o apelo universal do design contemporâneo praticado no e para
+                                                o Brasil. Discute ainda os desafios actuais associados à exposição e colecção de
+                                                artefactos resultantes da prática do design num museu dedicado a esta
+                                                actividade. E questiona a importância destes artefactos enquanto testemunhos
+                                                históricos de um período cujos progressos e políticas estão a ser radicalmente
+                                                postos em causa, sobretudo após a eleição de Jair Bolsonaro. Frederico Duarte
+                                                (1979) estudou design de comunicação em Lisboa e crítica de design em Nova
+                                                Iorque. Enquanto crítico e curador de design tem desde 2006 escrito artigos e
+                                                ensaios, contribuído para livros e catálogos, dado palestras e workshops,
+                                                comissariado exposições e organizado eventos sobre design, arquitectura e
+                                                criatividade. Está quase a concluir um doutoramento em curadoria centrado no
+                                                design brasileiro contemporâneo na Birkbeck College e no Museu Victoria &
+                                                Albert, em Londres.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../images/Redes Sociais.png" alt="Logotipo" class="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <a href="https://www.facebook.com">
+                        <img src="../images/facebook.png" alt="Facebook" class="social-logo">
+                    </a>
+                    <a href="https://www.youtube.com">
+                        <img src="../images/youtube.png" alt="Youtube" class="social-logo">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="../images/instagram.png" alt="Instagram" class="social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <img src="../images/linkedin.png" alt="LinkedIn" class="social-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/all_speakers/script.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Função para alterar o idioma
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+
+            const translations = {
+                POR: {
+                    title: "Drive",
+                    about: "Sobre",
+                    program: "Programa",
+                    registration: "Inscrição",
+                    contacts: "Contactos",
+                    files: "Arquivos",
+                    slogan: "Design Related Investigation",
+                    date: "15 e 16 de março de 2024",
+                    button: "Inscreva-se"
+                },
+                ENG: {
+                    title: "Drive",
+                    about: "About",
+                    program: "Program",
+                    registration: "Registration",
+                    contacts: "Contacts",
+                    files: "Files",
+                    slogan: "Design Related Investigation",
+                    date: "March 15th and 16th, 2024",
+                    button: "Subscribe"
+                },
+                ESP: {
+                    title: "Drive",
+                    about: "Sobre",
+                    program: "Programa",
+                    registration: "Inscripción",
+                    contacts: "Contactos",
+                    files: "Archivos",
+                    slogan: "Investigación Relacionada con el Diseño",
+                    date: "15 y 16 de marzo de 2024",
+                    button: "Suscribirse"
+                }
+            };
+
+            // Armazenar o idioma selecionado no localStorage
+            localStorage.setItem("selectedLanguage", lang);
+
+            // Atualizar os textos traduzidos
+            const translatedTexts = translations[lang];
+            document
+                .getElementById('selectedLanguage')
+                .innerText = lang;
+
+            // Percorrer todos os elementos com o atributo data-lang e atualizar os textos
+            // correspondentes
+            const elementsWithLang = document.querySelectorAll('[data-lang]');
+            elementsWithLang.forEach(function (element) {
+                const key = element.getAttribute('data-lang');
+                if (translatedTexts.hasOwnProperty(key)) {
+                    element.innerText = translatedTexts[key];
+                }
+            });
+        }
+
+        // Recuperar o idioma selecionado do localStorage
+        const selectedLanguage = localStorage.getItem("selectedLanguage");
+        if (selectedLanguage) {
+            changeLanguage(selectedLanguage);
+        }
+
+        // Adicionando um ouvinte de evento após o carregamento completo do documento
+        // HTML
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownButton = document.querySelector("#languageDropdown");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+            const languageDropdownItems = document.querySelectorAll(
+                ".dropdown-menu a.dropdown-item"
+            );
+            const selectedLanguage = document.querySelector("#selectedLanguage");
+
+            dropdownButton.addEventListener("click", function () {
+                dropdownMenu
+                    .classList
+                    .toggle("show");
+            });
+
+            languageDropdownItems.forEach(function (item) {
+                item.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    var lang = item.innerText;
+                    changeLanguage(lang);
+                    dropdownMenu
+                        .classList
+                        .remove("show");
+                });
+            });
+
+            var hamburgerButton = document.querySelector('.navbar-toggler');
+            var menuFullscreen = document.querySelector('.menu-fullscreen');
+            var closeMenuButton = document.querySelector('.close-menu');
+
+            hamburgerButton.addEventListener('click', function () {
+                menuFullscreen.style.display = 'flex';
+            });
+
+            closeMenuButton.addEventListener('click', function () {
+                menuFullscreen.style.display = 'none';
+            });
+        });
+        const speakerCards = document.getElementsByClassName('speaker-card');
+
+        for (let i = 0; i < speakerCards.length; i++) {
+            const speakerCard = speakerCards[i];
+            speakerCard.addEventListener('click', function () {
+                toggleDetails(i);
+            });
+        }
+
+        function toggleDetails(speakerIndex) {
+            var speakerDetails = document.getElementsByClassName('speaker-details');
+            var toggleButton = speakerCards[speakerIndex].querySelector('.text-primary');
+
+            // Verifica o estado atual dos detalhes do palestrante
+            var isExpanded = speakerDetails[speakerIndex].style.display === 'block';
+
+            // Oculta todos os detalhes dos palestrantes
+            for (var i = 0; i < speakerDetails.length; i++) {
+                speakerDetails[i].style.display = 'nav';
+                speakerCards[i]
+                    .querySelector('.text-primary')
+                    .innerText = '+';
+            }
+
+            // Alterna entre exibição e ocultação dos detalhes do palestrante selecionado
+            if (isExpanded) {
+                speakerDetails[speakerIndex].style.display = 'nav';
+                toggleButton.innerText = '+';
+            } else {
+                speakerDetails[speakerIndex].style.display = 'block';
+                toggleButton.innerText = '-';
+            }
+        }
+
+        const dates = document.querySelectorAll('.custom-btn');
+        const keynoteSpeakers = document.querySelectorAll('.keynote-speakers');
+
+        dates.forEach(date => {
+            date.addEventListener('click', () => {
+                const dateValue = date.getAttribute('data-date');
+                keynoteSpeakers.forEach(keynote => {
+                    const keynoteId = keynote.getAttribute('id');
+                    if (keynoteId === `keynote-speakers-${dateValue}`) {
+                        keynote.style.display = 'block';
+                    } else {
+                        keynote.style.display = 'none';
+                    }
+                });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+    const date15 = document.getElementById('keynote-speakers-15');
+    date15.style.display = 'block';
+});
+
+
+    </script>
+
+
+
+</body>
+</html>

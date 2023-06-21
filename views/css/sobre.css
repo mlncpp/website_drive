@@ -1,0 +1,221 @@
+body {
+    font-family: PP NeueBit;
+    color: white;
+    background-color: #B1C3E5;
+}
+
+.header {
+    background-color: #1E55BE;
+    font-weight: bold;
+    width: 100%;
+    font-size: 40px;
+}
+
+.main {
+    max-height: calc(100vh - 180px);
+    overflow-y: scroll;
+}
+
+@media (max-width: 767px) {
+    .main {
+        max-height: calc(100vh - 139px);
+        overflow-y: scroll;
+    }
+}
+
+.btn {
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: -20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+.btn:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.hover-effect {
+    position: relative;
+    border-radius: 10px;
+}
+
+.hover-effect::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #1E55BE;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover::after {
+    transform: scaleX(1);
+}
+
+.normal-link:hover {
+    background-color: #B1C3E5;
+    color: #1E55BE !important;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #B1C3E5;
+    color: #1E55BE !important;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-item .nav-link.active::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: calc(100% + 50px);
+    background-color: #B1C3E5;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.menu-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 86, 190, 0.911);
+    z-index: 9999;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    height: calc(100vh - 50px);
+    margin-bottom: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.menu-fullscreen ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.menu-fullscreen ul li {
+    padding: 0;
+    border-bottom: 1px solid white;
+    width: 100vh;
+}
+
+.menu-fullscreen ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.menu-fullscreen ul li a.active{
+    background-color: white;
+    color: #1E55BE;
+    border-radius: 10px;
+}
+
+.menu-fullscreen ul li a:hover {
+    background-color: white;
+    color: #1E55BE;
+    border-radius: 10px;
+}
+
+.menu-fullscreen ul li a:hover .menu-bar {
+    background-color: #1E55BE;
+}
+
+.menu-fullscreen ul li .menu-bar {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu-fullscreen ul li a:hover .menu-bar {
+    width: 100%;
+}
+
+.menu-fullscreen .close-menu {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.navbar-toggler-white {
+    border-color: white;
+    color: white;
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler-white:hover {
+    background-color: #1E55BE;
+}
+
+.navbar-toggler-white .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /* Define a imagem de ícone personalizada */
+}
+
+.footer {
+    background-color: #1E55BE;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    max-height: 30px;
+    vertical-align: middle;
+}
+
+.social-logo {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: PP NeueBit;
+    font-size: 80px;
+    color: white;
+}
+
+p {
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.texto {
+    margin-top: -35px;
+}
+
+.display-6 {
+    font-size: 30px;
+}
