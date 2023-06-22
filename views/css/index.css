@@ -16,12 +16,14 @@ body {
     overflow-y: scroll;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     .main {
-        max-height: calc(100vh - 139px);
+        max-height: calc(100vh - 140px);
         overflow-y: scroll;
     }
 }
+
+
 
 .btn {
     background-color: transparent;

@@ -17,7 +17,7 @@ body {
   overflow-y: scroll;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 829px) {
   .main {
       max-height: calc(100vh - 139px);
       overflow-y: scroll;
