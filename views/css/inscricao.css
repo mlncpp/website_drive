@@ -256,6 +256,22 @@ body {
     color: #1E55BE;
 }
 
+.btn-second {
+    font-family: PP NeueBit;
+    font-size: 25px;
+    background-color: red;
+    color: white;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    margin-top: -10px;
+}
+
+.btn-second:hover {
+    background-color: #ffffff;
+    color: red;
+}
+
 .fs-5 {
     margin-top: -5px;
 }
