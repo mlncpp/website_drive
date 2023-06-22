@@ -47,6 +47,23 @@ body {
 .hover-effect {
   position: relative;
   border-radius: 10px;
+  height: calc(100% + 35px);
+}
+
+@media (min-width: 830px) and (max-width: 992px) {
+  .hover-effect {
+      position: relative;
+      border-radius: 10px;
+      height: calc(100% + 30px);
+  }
+}
+
+@media (max-width: 829px) {
+  .hover-effect {
+      position: relative;
+      border-radius: 10px;
+      height: calc(100% + 20px);
+  }
 }
 
 .hover-effect::after {
@@ -76,18 +93,22 @@ body {
   position: relative;
   z-index: 1;
   border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .navbar-nav .nav-item .nav-link.active::before {
   content: "";
   position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  height: calc(100% + 50px);
+  bottom: -27px;
+    left: 0;
+    right: 0;
+    top: 0;
   background-color: #B1C3E5;
   z-index: -1;
   border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .menu-fullscreen {
