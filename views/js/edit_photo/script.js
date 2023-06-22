@@ -1,4 +1,3 @@
-// Get post by id and populate form with post data
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const photoId = urlParams.get("id");
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Update post
 const form = document.getElementById("photoform");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -33,7 +31,6 @@ form.addEventListener("submit", async (e) => {
       throw new Error("Network response was not ok");
     }
 
-    // Redirect to home page after successful post
     location.href = "galeria.html";
   } catch (error) {
     console.error("Error:", error);
@@ -52,7 +49,6 @@ deleteButton.addEventListener("click", async(e) => {
 
     if (response.ok) {
       console.log("Photo deleted successfully");
-      // Perform any additional actions after successful deletion
     } else {
       throw new Error("Network response was not ok");
     }

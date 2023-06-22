@@ -1,4 +1,3 @@
-// Get post by id and populate form with post data
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const speakerId = urlParams.get("id");
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error("Network response was not ok");
       }
   
-      // Redirect to home page after successful post
       location.href = "programa.html";
     } catch (error) {
       console.error("Error:", error);
@@ -52,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
       if (response.ok) {
         console.log("Speaker deleted successfully");
-        // Perform any additional actions after successful deletion
       } else {
         throw new Error("Network response was not ok");
       }

@@ -72,11 +72,10 @@ exports.updateSpeaker = async (req, res) => {
 exports.deleteSpeaker = async (req, res) => {
   try {
     const { id } = req.params;
-    // Lógica para excluir a foto usando o ID fornecido
     await Speaker.findByIdAndDelete(id);
-    res.sendStatus(200); // Envia uma resposta de sucesso
+    res.sendStatus(200); 
   } catch (error) {
     console.error(error);
-    res.sendStatus(500); // Envia uma resposta de erro
+    res.sendStatus(500); 
   }
 };

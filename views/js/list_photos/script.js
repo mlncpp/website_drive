@@ -1,4 +1,3 @@
-// Get all photos from the server and display them on the page
 document.addEventListener("DOMContentLoaded", () => {
     fetch("/newphoto")
       .then((response) => response.json())

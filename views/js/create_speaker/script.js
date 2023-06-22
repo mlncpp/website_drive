@@ -1,4 +1,3 @@
-// Create a new post
 const form = document.getElementById("speakerform");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -16,7 +15,6 @@ form.addEventListener("submit", async (e) => {
       throw new Error("Network response was not ok");
     }
 
-    // Redirect to home page after successful photo
     location.href = "../admin/programa.html";
   } catch (error) {
     console.error("Error:", error);
