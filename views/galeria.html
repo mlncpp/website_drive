@@ -210,7 +210,9 @@
                         registration: "Inscrição",
                         contacts: "Contactos",
                         files: "Arquivos",
-                        button: "Galeria"
+                        button: "Galeria",
+                        prev: "Anterior",
+                        next: "Próximo"
                     },
                     ENG: {
                         title: "Drive",
@@ -219,7 +221,9 @@
                         registration: "Registration",
                         contacts: "Contacts",
                         files: "Files",
-                        button: "Gallery"
+                        button: "Gallery",
+                        prev: "Previous",
+                        next: "Next"
                     },
                     ESP: {
                         title: "Drive",
@@ -228,7 +232,9 @@
                         registration: "Inscripción",
                         contacts: "Contactos",
                         files: "Archivos",
-                        button: "Galería"
+                        button: "Galería",
+                        prev: "Anterior",
+                        next: "Siguiente"
                     }
                 };
 
@@ -295,6 +301,17 @@
 
                 closeMenuButton.addEventListener('click', function () {
                     menuFullscreen.style.display = 'none';
+                });
+
+                // Adicionando evento de clique nas imagens da galeria
+                const galleryImages = document.querySelectorAll('.gallery-img');
+                galleryImages.forEach(function (image) {
+                    image.addEventListener('click', function () {
+                        const imgSrc = image.getAttribute('src');
+                        const modalImg = document.querySelector('.modal-body img');
+                        modalImg.setAttribute('src', imgSrc);
+                        $('#imageModal').modal('show');
+                    });
                 });
             });
         </script>

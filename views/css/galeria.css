@@ -368,3 +368,19 @@ h1 {
 h3{
     margin-left: 2.5cm;
 }
+
+.btn-primary {
+    font-family: PP NeueBit;
+    font-size: 25px;
+    background-color: #1E55BE;
+    color: white;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    margin-top: -10px;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #1E55BE;
+}
